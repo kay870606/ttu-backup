@@ -1,0 +1,30 @@
+<html>
+<head>
+<?php require("header.html")?>
+<style>
+div {
+position:absolute; 
+width:300px; 
+height:600px;
+    top:0; 
+bottom:0; 
+left:0; 
+right:0; 
+margin:auto;
+}
+<title>加入圖片</title>
+</style>
+</head>
+<body>
+<div>
+<p style="font-size:50px; color:blue;">加入圖片</p>
+<form action="addimg.php" method="post" enctype="multipart/form-data">
+  <br>
+	檔名:<input type="text" name="name" ><br><br>
+	<Input Type="file" Name="upfile" ><br><br>
+	<Input Type="submit" value="上傳">
+</form>
+<a href="itemdata.php">回上頁</a>
+</div>
+</body>
+</html>

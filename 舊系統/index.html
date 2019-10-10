@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--以下四行為網站基本設定-->
+<meta HTTP-EQUIV="Conent-Type" content="text/html; charset=UTF-8">
+<meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Tan 1980 1:00:00 GMT">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="viewport" content="width=device-width, intial-scale-1.0,minimum-scale=1.0, maximum-scale=1.6">
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    
+    
+   
+    overflow: hidden;
+}
+.dropbtn {
+        background-color: rgb(45,45,45);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+	font-size : 30px;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: rgb(100,100,100)}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(60,60,60);
+    }
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+
+   <title>商場測試系統</title>
+<h1>商場測試系統
+	<div class="dropdown">
+			<button class="dropbtn">類別</button>
+			<div class="dropdown-content">
+				<a href="market/index1.html"  target="iframe_a">首頁</a>
+				<a href="memberdata.php" target="iframe_a">會員</a>
+				<a href="market/itemdata.php" target="iframe_a">商品</a>
+				<a href="storedata.php"  target="iframe_a">庫存</a>
+				<a href="inputdata.html" target="iframe_a">表單</a>
+				<a href="club.html" target="iframe_a">單位</a>
+				<a href="searchdata.php" target="iframe_a">查詢</a>
+				<a href="market/index1.html" target="iframe_a">登出</a>
+			</div> 
+	</div>
+</h1>
+
+</header>
+  
+
+
+<article>
+  <iframe align="center"  width="100%" height="888px" style="border: 0px solid gray;"src="market/index1.html" name="iframe_a"></iframe>
+</article>
+
+
+
+
+
+</body>
+</html>
