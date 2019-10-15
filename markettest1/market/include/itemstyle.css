@@ -1,0 +1,5 @@
+div {width: 100%;border: 0px;text-align: center;}
+header, footer {width:100%;padding:4px 0;font-size:1em;font-weight:bold;text-align:center;
+	margin: 0px 0px 0px 0px;cursor: default;color: #000000;background: #83d487;}
+article {overflow-x: hidden;overflow-y: auto;}
+main {overflow-x: hidden;overflow-y: auto;}
