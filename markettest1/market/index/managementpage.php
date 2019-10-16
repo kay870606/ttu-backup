@@ -7,7 +7,7 @@ require_once("../include/headerdown.php");
 ?>
 <body>
 <header style="height:20px">
-<table border="0" width="90%" align="center" cellspacing="0"cellpadding="2" >
+<table border="0" width="90%"  align="center" cellspacing="0"cellpadding="2" >
 <tr>
 	<td><a href="../contact/contactmgm.php" target="iframe_b">商品管理</a></td>
 	<td><a href="../push/pushmgm.php" target="iframe_b">推播管理</a></td>

@@ -19,24 +19,28 @@ if (isset($Confirm)) {   // 確認按鈕
     if (empty($keywordmapping)) $ErrMsg = '關鍵字對應不可為0\n';
 	if (isset($_POST['keywordname'])) $keywordname = $_POST['keywordname'];
 	
-	$keywordmappingarray=array();
-	$num=0;
-	for($k=1;$k<=$Keywordmapping;$k++){
-		if (!empty($_POST["keywordmapping$k"])) {
-			$keywordsmapping=$_POST["keywordmapping$k"];
-			$num++;
-		}else{
-			continue;
-		}
-		$keywordmappingarray[$k]="$keywordsmapping";
-	}
 	if (empty($num)) $ErrMsg = '關鍵字對應不可為0\n';
     if (empty($ErrMsg)) {
-		$jskeywordmapping=json_encode($keywordmappingarray,320);
+		//$keywordmappingarray=array();
+		$num=0;
+		for($k=1;$k<=$Keywordmapping;$k++){
+			if (!empty($_POST["keywordmapping$k"])) {
+				$keywordsmapping=$_POST["keywordmapping$k"];
+				$num++;
+			}else{
+				continue;
+			}
+			$sqlcmd='INSERT INTO keywords (name,mapping) VALUES ('
+            . "'$keywordname','$keywordsmapping')";
+			$result = updatedb($sqlcmd, $db_conn);
+			//$keywordmappingarray[$k]="$keywordsmapping";
+			
+		}
+		//$jskeywordmapping=json_encode($keywordmappingarray,320);
 		
-        $sqlcmd='INSERT INTO keywords (name,mapping) VALUES ('
+        /*$sqlcmd='INSERT INTO keywords (name,mapping) VALUES ('
             . "'$keywordname','$jskeywordmapping')";
-        $result = updatedb($sqlcmd, $db_conn);
+        $result = updatedb($sqlcmd, $db_conn);*/
 
         header("Location: keywordsmgm.php");
 		exit();

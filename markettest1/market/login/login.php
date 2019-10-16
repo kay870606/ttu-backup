@@ -93,7 +93,7 @@ function setFocus()
 <center>
 <BODY bgcolor="#FFFFCC" text="#000000"
   topmargin="0" leftmargin="0" rightmargin="0" onload="setFocus()">
-<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
 <tr><td align="center">
 請於輸入框中輸入帳號與密碼，然後按「登入」按鈕登入。
 </td></tr>
